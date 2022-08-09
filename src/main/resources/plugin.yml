@@ -1,14 +1,14 @@
 name: Jobs
 description: Jobs plugin for the BukkitAPI
 main: com.gamingmesh.jobs.Jobs
-version: ${project.version}
+version: ${project.version}-CORP
 api-version: "1.13"
 folia-supported: true
 website: https://www.spigotmc.org/resources/4216/
 authors: [Zrips]
 contributors: [montlikadani]
-depend: [CMILib]
-softdepend: [Vault, Essentials, MythicMobs, WorldGuard, MyPet, PlaceholderAPI, EcoEnchants, WildStacker, StackMob, PyroFishingPro, BlockTracker, CustomFishing]
+depend: [CMILib, Erenos]
+softdepend: [Vault, Essentials, MythicMobs, WorldGuard, MyPet, PlaceholderAPI, EcoEnchants, WildStacker, StackMob, PyroFishingPro, BlockTracker, CustomFishing, Multiverse-Core]
 commands:
   jobs:
     description: Jobs
@@ -214,7 +214,7 @@ permissions:
     default: op
   jobs.command.admin.clearownership:
     description: Grants access to the ownedblocks command
-    default: op    
+    default: op
   jobs.command.itembonus:
     description: Grants access to the itembonus command
     default: true
@@ -231,5 +231,5 @@ permissions:
     description: Grants access to the area remove command
     default: op
   jobs.noownershiptakeover:
-    description: Will not take over existing block ownership 
+    description: Will not take over existing block ownership
     default: op
