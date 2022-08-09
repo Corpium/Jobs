@@ -216,6 +216,13 @@
 			<version>1.15.4</version>
 			<scope>provided</scope>
 		</dependency>
+        <!-- Erenos -->
+        <dependency>
+            <groupId>net.corpium</groupId>
+            <artifactId>corplexium</artifactId>
+            <version>12-f7fa094</version>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
 	<repositories>
 		<repository>
@@ -269,6 +276,11 @@
 			<id>evenmorefish-repo</id>
 			<url>https://repo.codemc.io/repository/EvenMoreFish/</url>
 		</repository>
+        <!-- you need to add a <server> with id "github-packages" and username/password in .m2/settings.xml settings.servers -->
+        <repository>
+            <id>github-packages</id>
+            <url>https://maven.pkg.github.com/corpium/corplexium</url>
+        </repository>
 		<!-- MyPet -->
 		<repository>
 			<id>mypet-releases</id>
