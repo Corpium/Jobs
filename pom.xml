@@ -192,6 +192,13 @@
             <version>2.3.4</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Erenos -->
+        <dependency>
+            <groupId>net.aerulion</groupId>
+            <artifactId>erenos</artifactId>
+            <version>3.10.0</version>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
 	<repositories>
 		<repository>
@@ -234,6 +241,11 @@
 		<repository>
 			<id>bg-repo</id>
 			<url>https://repo.bg-software.com/repository/api/</url>
+		</repository>
+		<!-- you need to add a <server> with id "github-packages" and username/password in .m2/settings.xml settings.servers -->
+		<repository>
+			<id>github-packages</id>
+			<url>https://maven.pkg.github.com/aerulion/erenos</url>
 		</repository>
 		<!-- MyPet -->
 		<!--<repository> <id>mypet-repo</id> <url>https://repo.mypet-plugin.de/</url>
