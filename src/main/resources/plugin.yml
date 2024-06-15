@@ -1,7 +1,7 @@
 name: Jobs
 description: Jobs plugin for the BukkitAPI
 main: com.gamingmesh.jobs.Jobs
-version: ${project.version}
+version: ${project.version}-CORP
 api-version: "1.13"
 folia-supported: true
 website: https://www.spigotmc.org/resources/4216/
@@ -214,7 +214,7 @@ permissions:
     default: op
   jobs.command.admin.clearownership:
     description: Grants access to the ownedblocks command
-    default: op    
+    default: op
   jobs.command.itembonus:
     description: Grants access to the itembonus command
     default: true
@@ -237,5 +237,5 @@ permissions:
     description: Prevent player to be shown in the global jobs top
     default: false
   jobs.noownershiptakeover:
-    description: Will not take over existing block ownership 
+    description: Will not take over existing block ownership
     default: op
