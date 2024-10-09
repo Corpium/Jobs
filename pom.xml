@@ -196,7 +196,7 @@
     <dependency>
       <groupId>net.aerulion</groupId>
       <artifactId>erenos</artifactId>
-      <version>2.3.142-SNAPSHOT</version>
+      <version>2.3.141</version>
       <classifier>dev</classifier>
       <scope>provided</scope>
     </dependency>
