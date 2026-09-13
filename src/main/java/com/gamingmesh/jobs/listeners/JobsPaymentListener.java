@@ -438,7 +438,7 @@ public final class JobsPaymentListener implements Listener {
 
         ItemStack contents = event.getContents().getIngredient();
         if (contents != null) {
-            Jobs.action(jPlayer, new ItemActionInfo(contents, ActionType.BREW));
+            Jobs.action(jPlayer, new ItemActionInfo(contents, ActionType.BREW), block);
         }
     }
 
@@ -1201,7 +1201,7 @@ public final class JobsPaymentListener implements Listener {
         if (Jobs.getGCManager().disablePaymentIfRiding && player.isInsideVehicle())
             return;
 
-        Jobs.action(Jobs.getPlayerManager().getJobsPlayer(player), new ItemActionInfo(event.getResult(), ActionType.SMELT));
+        Jobs.action(Jobs.getPlayerManager().getJobsPlayer(player), new ItemActionInfo(event.getResult(), ActionType.SMELT), block);
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
